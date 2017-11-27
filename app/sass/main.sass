@@ -1,0 +1,1153 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: inherit
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $museo
+	overflow-x: hidden
+	margin: 0
+	color: $dark
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+a,	
+a:hover, 
+a:focus,
+a:visited, 
+a:active
+  text-decoration: none
+
+header
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 100vh
+.navigation
+	display: grid
+	grid-template-columns: 1fr 1fr
+	background-color: $grey
+	nav
+		ul
+			padding: 0
+			margin: 22px 0 22px 53px
+		li
+			display: inline-block
+			margin-right: 24px
+			font-weight: 300
+			a
+				color: $dark
+				transition: .25s
+				&:hover
+					color: $accent
+	form
+		text-align: right
+		margin-right: 50px
+		input
+			border: none
+			background-color: inherit		
+			outline: none
+			padding: 8px 0
+			border-bottom: 1px solid $dark-grey
+			margin-top: 15px
+			width: 220px
+			background-repeat: no-repeat
+			background-position: center right
+			&::placeholder
+				font-size: 14px
+				font-weight: 100 
+				color: $dark-grey
+.head-action
+	background-color: #FFF
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	.calculate
+		margin:
+			left: 53px
+		.cost
+			margin:
+				top: 30px
+			font-weight: 700
+			p
+				margin: 0
+		.calc
+			margin:
+				top: 16px
+				bottom: 23px
+			a
+				background-repeat: no-repeat
+				background-position: left center
+				padding:
+					left: 30px
+					top: 1px 
+					bottom: 1px
+				text-decoration: underline
+				color: $dark
+				transition: .25s
+				&:hover
+					color: $accent
+	.logo
+		display: grid
+		align-content: center
+		img
+			margin: auto
+	.callback
+		display: grid
+		grid-template-columns: 1fr 1fr
+		align-content: center
+		.phone
+			text-align: right
+			p
+				margin: 0
+				font-size: 20px
+				font-weight: 700
+			span
+				font-weight: 100
+				font-size: 14px
+		.cb-btn
+			// background-color: $blue
+			margin: auto		
+			text-align: center
+			a
+				padding: 15px 38px 15px 58px
+				background-color: $blue
+				border-radius: 50px
+				background-position: 30px center
+				background-repeat: no-repeat
+				font-size: 14px
+				color: #fff
+				// height: 45px
+.dop-nav
+	background-color: #FFF
+	padding: 20px
+	border-top: 1px solid $grey
+	nav
+		text-align: center
+		ul
+			padding: 0
+			margin: 0 
+			li
+				display: inline-block
+				margin-right: 37px
+				a
+					font-size: 15px
+					font-weight: 300
+					color: $dark
+					transition: .25s
+					&:hover
+						color: $accent
+
+.main-wrapper
+	display:grid
+	text-align: center
+	margin: 10% 30%
+	h1
+		align-content: center
+		font-size: 62px
+		font-weight: 900
+		line-height: 80px
+		text-transform: uppercase
+		color: #fff
+	a
+		font-size: 18px
+		padding: 25px 60px
+		border-radius: 50px
+		color: #fff
+		background-color: $accent
+
+.section-title
+	// text-align: center
+	padding: 100px 0 50px 0
+	display: grid
+	grid-template-columns: 1fr
+	max-width: 570px
+	margin: auto
+	// background-color: #C0B1B1
+	p
+		font-size: 36px
+		font-weight: 900
+		overflow: hidden
+		text-transform: uppercase
+		margin: auto
+		&::after
+			content: ''
+			position: relative
+			height: 2px
+			background-color: $accent
+			width: 111px
+			display: inline-block
+			vertical-align: middle
+			border-sizing: border-box
+			margin-right: -100%
+			right: -20px
+	span
+		font-size: 27px
+		font-weight: 100
+		text-align: right
+		overflow: hidden
+		margin: auto
+		&::before
+			content: ''
+			position: relative
+			height: 2px
+			background-color: $accent
+			width: 111px
+			display: inline-block
+			vertical-align: middle
+			border-sizing: border-box
+			margin-left: -100%
+			left: -20px
+.window-text
+	display: grid
+	max-width: 1200px
+	margin: auto
+	text-align: center
+	p
+		font-size: 19px
+		font-weight: 100
+		margin-top: 0
+		span
+			font-weight: 700
+
+.offer
+	display: grid
+	max-width: 1100px
+	margin: auto
+	p
+		margin: auto 0
+	.offer-title
+		margin:
+			top: 50px
+			bottom: 50px
+		text-align: center
+		font-size: 22px
+		font-weight: 700
+	.offer-wrapper
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		.guarantee
+			display: grid
+			grid-gap: 23px
+			grid-template-columns: 90px 1fr
+		.installment
+			display: grid
+			grid-gap: 23px
+			grid-template-columns: 90px 1fr
+		.bonus
+			display: grid
+			grid-gap: 23px
+			grid-template-columns: 90px 1fr
+		.montage
+			display: grid
+			grid-gap: 23px
+			grid-template-columns: 90px 1fr
+
+.portfolio-wrapper
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	.portfolio-item
+		display: grid
+		align-content: center
+		text-align: center
+		height: 320px
+		background-repeat: no-repeat
+		background-size: cover
+		a
+			color: #fff
+			font-size: 26px
+			font-weight: 300
+			margin: auto
+			padding: 10px 50px
+			width: 400px
+			position: relative
+			&:hover span::before
+			  top: -10px
+			  left: -10px
+			  // height: 20px
+			  // width: 20px
+			&:hover span::after
+			  bottom: -10px
+			  right: -10px
+			  // height: 20px
+			  // width: 20px
+			&:hover
+				&::before
+					top: -10px
+					right: -10px
+					// height: 20px
+					// width: 20px
+				&::after
+					bottom: -10px
+					left: -10px
+					// height: 20px
+					// width: 20px
+			&::before,
+			&::after
+				border-color: transparent
+				border-style: solid
+				transition: all .25s ease
+				border-width: 0
+				content: ''
+				height: 10px
+				width: 10px
+				position: absolute
+			&::before
+				border-color: $blue
+				border-right-width: 2px
+				border-top-width: 2px
+				right: -5px
+				top: -5px
+			&::after
+				border-color: $blue
+				border-left-width: 2px
+				border-bottom-width: 2px
+				left: -5px
+				bottom: -5px
+			span
+				&::before,
+				&::after
+					border-color: transparent
+					border-style: solid
+					transition: all .25s ease
+					border-width: 0
+					content: ''
+					height: 10px
+					width: 10px
+					position: absolute
+				&::before
+					border-color: $blue
+					border-left-width: 2px
+					border-top-width: 2px
+					left: -5px
+					top: -5px
+				&::after
+					border-color: $blue
+					border-right-width: 2px
+					border-bottom-width: 2px
+					right: -5px
+					bottom: -5px
+.some-reasons
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	max-width: 1200px
+	margin: auto
+	.reason-block
+		display: grid
+		.number
+			span
+				font-family: $segoe
+				font-size: 100px
+				font-weight: 900
+				color: #cbebf8
+				float: left
+				position: relative
+			p
+				left: -8%
+				top: 55%
+				position: relative
+				margin: 0
+				line-height: 25px
+				font-weight: 300
+				font-size: 18px
+			.one
+				left: -5%
+	.consult
+		width: 330px
+		margin: auto
+		border-radius: 22px
+		text-align: center
+		position: relative
+		background-position: center
+		background-repeat: no-repeat
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: $blue
+			opacity: 0.6
+			border-radius: 22px
+			border: 1px solid rgb(229, 229, 229)
+			box-shadow: 0px 1px 9.6px 0.4px rgba(0, 0, 0, 0.15)
+		.consult-title
+			margin: 30px 50px
+			position: relative
+			color: #fff
+			.ttl
+				font-family: $segoe
+				font-size: 22px
+				text-transform: uppercase
+				margin: 0
+			.free
+				margin: 10px 0
+				font-weight: 300
+				span
+					font-weight: 700
+		.consult-form
+			position: relative
+			form
+				.enter
+					padding: 16px 0px 12px 26px
+					margin-bottom: 10px
+					background-color: #FFF
+					border: none
+					width: 270px
+					font-weight: 100
+					font-size: 14px
+					border-radius: 30px
+					outline: none
+					&::placeholder
+						color: $dark-grey
+				.send
+					background-color: $accent
+					padding: 15px 112px
+					font-size: 14px
+					font-weight: 300
+					border-radius: 30px
+					color: #fff
+					border: none
+					outline: none
+				.check-block
+					display: grid
+					grid-template-columns: 18px 1fr
+					margin: 23px
+					label
+						font-size: 12px
+						font-weight: 100
+						text-align: left
+						color: #fff
+						a
+							color: #fff
+							text-decoration: underline
+
+
+
+
+
+.numbers-block
+	display: grid
+	max-width: 1200px
+	margin: 0 auto
+	text-align: center
+	grid-template-areas: "box-1 box-2 box-3" "box-4 box-5 box-6"
+	.number-item
+		display: grid
+		align-content: center
+		p
+			font-family: $segoe
+			font-size: 80px
+			margin: 0
+			color: $blue
+		span
+			font-size: 20px
+			font-weight: 100
+			height: 100px
+
+	.number-item:nth-child(1)
+		grid-area: box-1
+	.number-item:nth-child(2)
+		grid-area: box-2
+	.number-item:nth-child(3)
+		grid-area: box-3
+	.number-item:nth-child(4)
+		grid-area: box-4
+	.number-item:nth-child(5)
+		grid-area: box-5
+	.number-item:nth-child(6)
+		grid-area: box-6
+
+.prod-block
+	.prod-item
+		margin-top: 100px
+		margin-bottom: 100px
+		img
+			width: 100%
+			height: 300px
+
+.owl-item.active.center
+	transform: scale(1.5)
+	transition: all .5s
+	z-index: 1000
+	&::before
+		content: ''
+		position: absolute
+		// background-color: rgba(#000, .1)
+		opacity: 0
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+.prod-block
+	.owl-stage-outer
+		.owl-stage
+			.owl-item
+				&::before
+					content: ''
+					position: absolute
+					// background-color: rgba(#000, .9)
+					top: 100px
+					background-color: $dark
+					opacity: 0.6
+					left: 0
+					bottom: 100px
+					right: 0
+					overflow: hidden
+
+.prod-block
+	.owl-nav
+		div
+			position: absolute
+			top: 40%
+			font-size: 65px
+			color: #fff
+			padding: 0 30px
+		.owl-prev
+			left: 300px
+		.owl-next
+			right: 300px
+
+.changer
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	margin: 0 auto
+	max-width: 456px
+	grid-gap: 10px
+	.chng
+		border: none
+		background-color: inherit
+		font-size: 16px
+		border: 1px solid $blue
+		padding: 16px 0
+		border-radius: 30px
+		transition: all .5s ease
+		outline: none
+		&:hover,
+		&:active
+			background-color: $blue
+			color: #fff
+
+.reviews
+	max-width: 1200px
+	margin: 65px auto
+	box-shadow: 0px 2px 8.19px 0.81px rgba(0, 0, 0, 0.13)
+	.main-slider
+		display: grid
+		grid-template-columns: repeat(2, 600px)
+		grid-template-rows: 440px
+		.image-slider
+			max-width: 600px
+		.review
+			padding: 30px 40px
+			.review-title
+				font-size: 22px
+			.review-google
+				font-size: 14px
+				font-weight: 100
+				color: $blue
+				&::before
+					content: url(../img/icons/Link.png)	
+					margin-right: 5px
+			.date
+				&::before
+					content: url(../img/icons/Calendar.png)
+					margin-right: 5px
+			.need
+				background-color: $accent
+				padding: 17px 96px
+				border: none
+				border-radius: 20px
+				margin-top: 15px
+				color: #fff
+			p
+				font-weight: 500
+				margin: 0
+			span
+				font-size: 14px
+				font-weight: 100
+				color: $dark-grey
+				margin-right: 12px
+			.maded
+				span
+					margin-right: 20px
+			.descript-proj
+				p
+					font-weight: 100
+		.owl-nav
+			div
+				position: absolute
+				top: 45%
+				font-size: 35px
+				color: $blue
+				padding: 0 30px
+		.owl-prev
+			left: 10px
+		.owl-next
+			right: 10px
+	.owl-nav
+		div
+			position: absolute
+			top: 40%
+			font-size: 65px
+			color: $dark-grey
+			padding: 0 30px
+	.owl-prev
+		left: -100px
+	.owl-next
+		right: -100px	
+	.video-slider
+		display: grid
+		grid-template-columns: 748px 412px
+		grid-template-rows: 360px		
+		.video-review
+			padding: 30px 40px
+			.reviewer-name
+				font-size: 22px
+				font-weight: 300
+			.reviewer-title
+				font-size: 17px
+				font-weight: 500
+			.reviewer-link
+				font-weight: 100
+				font-size: 17px
+			.review-google
+				font-size: 14px
+				font-weight: 100
+				color: $blue
+				&::before
+					content: url(../img/icons/Link.png)	
+					margin-right: 5px
+			.reviewer-txt
+				font-weight: 100
+				p
+					margin: 0
+					span
+						color: $blue
+						margin: 0 2px
+.all-proj
+	text-align: center
+	margin: 20px auto
+	a
+		padding: 15px 55px
+		border: solid 1px $accent
+		border-radius: 20px
+		color: $accent
+		transition: all .5s ease
+		&:hover
+			background-color: $accent
+			color: #fff
+
+.way-wrapper
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-template-areas: "bok-1 ." "bok-2 bok-3" "bok-5 bok-4" "bok-6 bok-7" ". bok-8"
+	max-width: 1200px
+	margin: auto
+	position: relative
+	span
+		position: absolute
+		// right: 50%
+		left: 0
+		right: 0
+		margin: 0 auto
+		height: 40px
+		width: 40px
+		background-color: $dark-grey
+		color: $blue
+		text-align: center
+		display: grid
+		align-content: center
+		border-radius: 100%
+		font-size: 20px
+		transition: all .2s ease
+	.first
+		top: 80px
+		background-color: $blue
+		color: #fff
+		box-shadow: 0px 2px 2px #333
+	.second
+		top: 380px
+	.third
+		top: 680px
+	.fourth
+		top: 980px
+		// padding-bottom: 5px
+	.way:nth-child(1)
+		grid-area: bok-1
+	.way:nth-child(2)
+		grid-area: bok-2
+		position: relative
+		box-sizing: border-box
+		// border-right: 4px solid $grey
+		// &::after
+
+			// transition: height ease-out 7s 
+		// &:hover::after
+		// 	height: 100%
+		// 	border-right-color: $blue
+
+	.way:nth-child(3)
+		grid-area: bok-3
+		position: relative
+		// &::after
+		// 	content: ''
+		// 	position: absolute
+		// 	width: 100%
+		// 	height: 100%
+		// 	border: 4px solid transparent
+		// 	top: 0
+		// 	left: 0
+		// 	border-left-color: $grey
+			// transition: height ease-out 7s 
+	.way:nth-child(4)
+		grid-area: bok-4
+		position: relative
+		// &::after
+		// 	content: ''
+		// 	position: absolute
+		// 	width: 100%
+		// 	height: 100%
+		// 	border: 4px solid transparent
+		// 	top: 0
+		// 	left: 0
+		// 	border-left-color: $blue
+		// 	transition: height ease-out 7s 		
+	.way:nth-child(5)
+		grid-area: bok-5
+		position: relative
+		// &::after
+		// 	content: ''
+		// 	position: absolute
+		// 	width: 100%
+		// 	height: 100%
+		// 	border: 4px solid transparent
+		// 	top: 0
+		// 	right: 0
+		// 	border-right-color: $blue
+		// 	transition: height ease-out 7s 
+	.way:nth-child(6)
+		grid-area: bok-6
+		position: relative
+		// &::after
+		// 	content: ''
+		// 	position: absolute
+		// 	width: 100%
+		// 	height: 100%
+		// 	border: 4px solid transparent
+		// 	top: 0
+		// 	right: 0
+		// 	border-right-color: $blue
+		// 	transition: height ease-out 7s 		
+	.way:nth-child(7)
+		grid-area: bok-7
+		position: relative
+		// &::after
+		// 	content: ''
+		// 	position: absolute
+		// 	width: 100%
+		// 	height: 100%
+		// 	border: 4px solid transparent
+		// 	top: 0
+		// 	left: 0
+		// 	border-left-color: $blue
+		// 	transition: height ease-out 7s 
+	.way:nth-child(8)
+		grid-area: bok-8
+	.way
+		.way-icon,
+		.way-img,
+		.way-txt,
+		.main-way-txt
+			text-align: center
+			vertical-align: bottom
+			margin: 0 auto
+			width: 60%
+			p
+				margin: 0
+		.bot
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+		.main-way-txt
+			font-size: 22px
+			font-weight: 700
+			color: $grey
+		.way-txt
+			font-weight: 100
+			color: $grey
+		.txt-color
+			color: $dark
+	.one,
+	.two,
+	.three,
+	.four
+		height: 300px
+	.one::after,
+	.two::after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 0
+		border: 4px solid transparent
+		top: 0
+		right: 0
+		border-right-color: $grey
+		transition: height ease-out 2s 		
+	.two::after
+		height: 100% 
+		border-right-color: $blue
+	.three::after,
+	.four::after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 0
+		border: 4px solid transparent
+		top: 0
+		left: 0
+		border-left-color: $grey
+		transition: height ease-out 2s 		
+	.four::after
+		height: 100% 
+		border-left-color: $blue
+
+
+		// img
+		// 	display: grid
+		// 	text-align: center
+		// 	max-width: 340px
+		// 	margin: auto
+		// 	align-content: center
+	.way2,
+	.way4,
+	.way6
+		.grey
+			filter: grayscale(1)
+
+.rewards
+	max-width: 1200px
+	margin: auto
+	.owl-nav
+		div
+			position: absolute
+			top: 40%
+			font-size: 65px
+			color: $dark-grey
+			padding: 0 30px
+	.owl-prev
+		left: -100px
+	.owl-next
+		right: -100px	
+	.reward
+		width: 260px
+		height: 360px
+		background-color: #ececec
+
+.actions
+	max-width: 1200px
+	margin: auto
+	height: 440px
+	.action
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		.application
+			position: absolute
+			z-index: 100
+			left: 0
+			top: 0
+			bottom: 0
+			width: 50%
+			background-color: rgba($blue, 0.8)
+			display: grid
+			align-content: center
+			.app-content
+				margin: auto
+				width: 70%
+				color: #fff
+				p
+					font-size: 40px
+					font-family: $segoe
+					margin: 0
+				span
+					font-size: 20px
+					font-weight: 100
+				.get
+					background-color: $accent
+					padding: 17px 96px
+					border: none
+					border-radius: 20px
+					margin-top: 15px
+					color: #fff
+
+	.owl-nav
+		div
+			position: absolute
+			top: 40%
+			font-size: 65px
+			color: $dark-grey
+			padding: 0 30px
+	.owl-prev
+		left: -100px
+	.owl-next
+		right: -100px	
+
+.free-measure
+	margin-top: 120px
+	background-position: center
+	background-size: cover
+	position: relative
+	height: 290px
+	display: grid
+	align-content: center
+	text-align: center
+	&::after
+		content: ''
+		position: absolute		
+		top: 0
+		right: 0
+		bottom: 0
+		top: 0
+		width: 100%
+		background-color: $blue
+		opacity: .62
+	.title
+		text-transform: uppercase
+		font-size: 36px
+		font-family: $segoe
+		z-index: 1
+		margin-bottom: 20px
+	.consult-form
+		position: relative
+		margin: auto
+		z-index: 1
+		form
+			.enter
+				padding: 16px 0px 12px 26px
+				margin-bottom: 10px
+				margin-right: 20px
+				background-color: #FFF
+				border: none
+				width: 270px
+				font-weight: 100
+				font-size: 14px
+				border-radius: 30px
+				outline: none
+				&::placeholder
+					color: $dark-grey
+			.send
+				background-color: $accent
+				padding: 15px 112px
+				font-size: 14px
+				font-weight: 300
+				border-radius: 30px
+				color: #fff
+				border: none
+				outline: none
+			.check-block
+				display: grid
+				grid-template-columns: 18px 1fr
+				// margin: auto
+				label
+					font-size: 12px
+					font-weight: 100
+					text-align: left
+					color: #fff
+					a
+						color: #fff
+						text-decoration: underline
+.map-work
+	max-width: 1200px 
+	margin: 0px auto 50px
+
+.windows
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	max-width: 1200px
+	margin: 0 auto 50px
+	text-align: center
+	.title
+		font-size: 22px
+		font-weight: 500
+		span
+			color: $accent
+			font-weight: 700
+	.average-price
+		font-size: 18px
+		color: $dark-grey	
+		span
+			position: relative
+			&:before
+				border-bottom: 2px solid $accent;
+				position: absolute;
+				content: "";
+				width: 115%;
+				height: 50%;
+				left: -10px
+				transform: rotate(-5deg);
+
+.garant
+	display: grid
+	grid-template-columns: 1fr 2fr
+	max-width: 1200px
+	margin: 90px auto 0px
+	.man
+		background-repeat: no-repeat
+		background-position: bottom
+	.content
+		padding: 0px 40px
+		.title
+			font-size: 35px
+			font-family: $museo
+			font-weight: 900
+			text-transform: uppercase
+		p
+			font-weight: 100
+		.consult-form
+			position: relative
+			width: 50%
+			margin: auto
+			form
+				.questions
+					font-size: 32px
+					font-family: $segoe
+					margin-bottom: 0px
+				span
+					font-size: 18px
+				.enter
+					padding: 16px 0px 12px 26px
+					margin-bottom: 10px
+					background-color: #e9f8fc
+					border: none
+					width: 270px
+					font-weight: 100
+					font-size: 14px
+					border-radius: 30px
+					outline: none
+					&::placeholder
+						color: $dark-grey
+				.send
+					background-color: $accent
+					padding: 15px 112px
+					font-size: 14px
+					font-weight: 300
+					border-radius: 30px
+					color: #fff
+					border: none
+					outline: none
+				.check-block
+					display: grid
+					grid-template-columns: 18px 1fr
+					margin-right: 23px
+					margin-bottom: 23px
+					label
+						font-size: 12px
+						font-weight: 100
+						text-align: left
+						color: $dark
+						a
+							color: $dark
+							text-decoration: underline
+
+.map
+	position: relative
+	.contacts
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 165px
+		background-color: rgba($blue, 0.9)
+		padding: 20px
+		color: #fff
+		.central-office
+			font-size: 18px
+			font-weight: 700
+		.cb-btn
+			// background-color: $blue
+			margin: 35px auto		
+			text-align: center
+			a
+				padding: 15px 38px 15px 58px
+				background-color: $accent
+				border-radius: 50px
+				background-position: 30px center
+				background-repeat: no-repeat
+				font-size: 14px
+				color: #fff	
+		ul
+			list-style: none
+			li
+				p
+					font-size: 16px
+					font-weight: 100
+					i
+						margin-right: 5px
+				.weekend
+					margin-left: 15px		
+
+.footer
+	background-color: #2e2e2e
+	color: $dark-grey
+	display: grid
+	grid-template-columns: repeat(5, 1fr)
+	padding: 50px
+	ul
+		list-style: none
+		padding: 0
+		font-weight: 100
+	.other,
+	.about-company,
+	.logo,
+	.services,
+	.rights
+		margin: auto
+		display: grid
+		align-content: center
+		p
+			margin: 0
+			column-rule: $grey
+		.confident
+			margin: 20px 0
+	.logo
+		ul
+			li
+				display: inline-block
+				a
+					color: $grey
+					font-size: 20px
+					margin: 5px 20px
+@import "media" // Всегда в конце
